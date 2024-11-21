@@ -25,3 +25,5 @@ A command-line tool written in Go (Golang) - based on the project [Spoofy](https
 ## Installation
 
 ## Usage
+
+## Example

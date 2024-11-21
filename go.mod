@@ -1,4 +1,4 @@
-module github.com/v1sc0/stopemailspoofing
+module stopemailspoofing
 
 go 1.23.1
 

@@ -5,8 +5,12 @@
 ## What it is?
 A command-line tool written in Go (Golang) - based on the project [Spoofy](https://github.com/MattKeeley/Spoofy) - for analyzing the vulnerability of domain names to email spoofing attacks and suggesting changes for mitigation.
 
-## Features
-[+] Input either a single domain name or provide a path to a list of domain names.
+## How it works?
+[+] Accepts either a single domain name or provide a path to a list of domain names.
+
+[+] Checks if the entry corresponds to a organizational domain or a subdomain.
+
+[+] Gets SOA, NS and MX records.
 
 [+] Attempts to locate DKIM (DomainKeys Identified Mail) record using the 100 most common selectors.
 
@@ -27,6 +31,12 @@ A command-line tool written in Go (Golang) - based on the project [Spoofy](https
 ** The tool makes its conclusions according to what is found in [ULTIMATE_TABLE](https://github.com/v1sc0/stopemailspoofing/blob/main/ULTIMATE_TABLE.xlsx).
 
 ## Installation
+
+1. Install Golang https://go.dev/doc/install (v1.23.1 at least)
+2. ```
+   git clone https://github.com/v1sc0/stopemailspoofing.git
+   cd stopemailspoofing/
+3. 
 
 ## Usage
 

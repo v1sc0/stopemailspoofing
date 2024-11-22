@@ -7,8 +7,9 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"stopemailspoofing/modules"
 	"strings"
+
+	"github.com/v1sc0/stopemailspoofing/modules"
 
 	"github.com/fatih/color"
 )

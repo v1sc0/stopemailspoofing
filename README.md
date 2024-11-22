@@ -3,7 +3,7 @@
 ![icon](https://github.com/user-attachments/assets/ed99d036-9c17-4ef2-9ea0-d8bc5c0d6e9d)
 
 ## What it is?
-A command-line tool written in Go (Golang) - based on the project [Spoofy](https://github.com/MattKeeley/Spoofy) - for analyzing the vulnerability of domain names to email spoofing attacks and suggesting changes for mitigation.
+A command-line tool written in Go (Golang) - inspired on the project [Spoofy](https://github.com/MattKeeley/Spoofy) - for analyzing the vulnerability of domain names to email spoofing attacks and suggesting changes for mitigation.
 
 ## How it works?
 [+] Accepts either a single domain name or a path to a list of domain names.

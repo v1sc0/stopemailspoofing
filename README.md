@@ -47,7 +47,7 @@ A command-line tool written in Go (Golang) - based on the project [Spoofy](https
 
 ![image](https://github.com/user-attachments/assets/c8d67219-f340-4633-ad53-bfa173c92761)
 
-## Example
+## Output example
 
 ![image](https://github.com/user-attachments/assets/d6d48ec1-c92c-415c-a811-693ce91b1edc)
 

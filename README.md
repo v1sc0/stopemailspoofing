@@ -52,7 +52,7 @@ A command-line tool written in Go (Golang) - inspired on the project [Spoofy](ht
 ![image](https://github.com/user-attachments/assets/d6d48ec1-c92c-415c-a811-693ce91b1edc)
 
 ## How email authentication works?
-![SPF](https://github.com/user-attachments/assets/4e054e3b-a2ee-4832-9c16-ae27b76be480)
+![SPF](https://github.com/user-attachments/assets/df0aa88d-5612-4599-8af0-989cdfe446a8)
 ![DKIM](https://github.com/user-attachments/assets/0381047b-99be-42da-bca8-e48aa37e9316)
 ![dmarc](https://github.com/user-attachments/assets/8f5239ab-7044-465d-9fed-bf1bf20ebe12)
 

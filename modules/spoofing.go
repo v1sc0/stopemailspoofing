@@ -31,20 +31,20 @@ func NovoSpoofing(domain, spfAll, dmarcPolicy, aspf, subPolicy, dmarcRecord stri
 
 func CheckSpoofing(spfRecord, dmarcPolicy, aspf, subPolicy, dnsQueryCount string) SpoofingResult {
 
-	if isNotSpoofable(spfRecord, dmarcPolicy, aspf, subPolicy) {
-		return SpoofingResult{Spoofability: "Spoofing is not possible."}
+	if isSubdomainSpoofingPossible(spfRecord, dmarcPolicy, aspf, subPolicy) {
+		return SpoofingResult{Spoofability: "Only subdomain spoofing is possible. Organizational domain spoofing is not possible."}
 	}
 	if isOrganizationalSpoofingPossible(spfRecord, dmarcPolicy, aspf, subPolicy) {
 		return SpoofingResult{Spoofability: "Only organizational domain spoofing is possible. Subdomain spoofing is not possible."}
-	}
-	if isSubdomainSpoofingPossible(spfRecord, dmarcPolicy, aspf, subPolicy) {
-		return SpoofingResult{Spoofability: "Only subdomain spoofing is possible. Organizational domain spoofing is not possible."}
 	}
 	if isSpoofable(spfRecord, dmarcPolicy, aspf, subPolicy) {
 		return SpoofingResult{Spoofability: "Organizational domain spoofing and subdomain spoofing are possible."}
 	}
 	if isSpoofableTooManyLookups(dnsQueryCount, dmarcPolicy, aspf, subPolicy) {
 		return SpoofingResult{Spoofability: "Organizational domain spoofing and subdomain spoofing are possible."}
+	}
+	if isNotSpoofable(spfRecord, dmarcPolicy, aspf, subPolicy) {
+		return SpoofingResult{Spoofability: "Spoofing is not possible."}
 	}
 	return SpoofingResult{Spoofability: "Unknown condition (Possibly SPOOFABLE due to a syntax error in one or more records)."}
 }
